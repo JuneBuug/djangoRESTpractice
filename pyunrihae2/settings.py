@@ -44,13 +44,12 @@ INSTALLED_APPS = [
     # REST framework Swagger
     'rest_framework_swagger',
 
-    # 편리해 앱
 
     'cs',
 
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -92,8 +91,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'pyunrihae',
-        'USER': 'june',
-        'PASSWORD': '',
+        'USER': 'junekim',
+        'PASSWORD': 'aabb1122',
         'HOST': 'localhost',
         'PORT': '',
     }
