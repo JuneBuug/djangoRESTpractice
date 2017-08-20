@@ -14,7 +14,7 @@ class Product(models.Model) :
     img_url = models.CharField(max_length=2048)  # 상품 이미지 url
     brand = models.CharField(max_length=128)  # 브랜드 이름
     category = models.CharField(max_length=128)  # 카테고리이름
-    price = models.IntegerField  # 가격
+    price = models.CharField(max_length=128)  # 가격
     data = JSONField()  # event 정보, flavor_level, grade_avg, grade_count, grade_total, price_level, quantity_level
 
 

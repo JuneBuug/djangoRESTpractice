@@ -12,7 +12,7 @@ def product_page(request):
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ('name','img_url','brand','category','data')
+        fields = ('name','img_url','brand','category','data','price')
 
 class product_api(GenericAPIView, mixins.ListModelMixin):
     queryset = Product.objects.all()

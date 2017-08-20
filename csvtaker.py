@@ -8,6 +8,6 @@ with codecs.open('data5.csv', 'r', encoding='utf-8') as csvfile:
      spamreader = csv.DictReader(csvfile, delimiter=',', quotechar='|')
      for row in spamreader:
          # print(row)
-         Product.objects.create(name=row["name"],img_url=row["img"],brand=row["brand"],category=row["category"],data={ "event" : row["event"]})
+         Product.objects.create(name=row["name"],img_url=row["img"],brand=row["brand"],price=row["price"],category=row["category"],data={ "event" : row["event"]})
          # print(row["name"])
 
